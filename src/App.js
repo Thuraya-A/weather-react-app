@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div class="weather-app">
@@ -81,7 +80,9 @@ function App() {
         </div>
       </div>
       <footer>
-        <a href="https://github.com/Thuraya-A/weather-app">open-source-code </a>
+        <a href="https://github.com/Thuraya-A/weather-react-app">
+          open-source-code{" "}
+        </a>
         , by Thuraya Ali
       </footer>
 
@@ -89,5 +90,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
