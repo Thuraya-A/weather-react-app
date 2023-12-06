@@ -1,35 +1,37 @@
 import React from "react";
+import "./CurrentWeather.css";
 
 export default function CurrentWeather() {
   return (
     <div className="CurrentWeather">
       <form
         action="Search for city"
-        class="row g-3 align-items-center"
+        className="row g-3 align-items-center"
         id="search-form"
       >
-        <div class="mb-3 col-6 search-bar">
+        <div className="mb-3 col-lg-6 col-md-6 col-sm-12 search-bar">
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="search-input"
             placeholder="Search for city"
           />
         </div>
-        <div class="col-auto form-text">
-          <button type="submit" class="btn btn-primary go-button">
+        <div className="col-lg-auto col-md-auto col-sm-4 form-text go">
+          <button type="submit" className="btn btn-primary go-button">
             Go
           </button>
         </div>
-        <div class="col-auto form-text">
-          <button type="submit" class="btn btn-primary go-button">
+        <div className="col-lg-auto col-md-auto col-sm-6 form-text current">
+          <button type="submit" className="btn btn-primary go-button">
             Current
           </button>
         </div>
       </form>
-      <div className="row">
+      <div className="row ">
         <div className="col-6">
-          <div className="current">Monday 13:40</div>
+          <div className="date">Monday 10:30 </div>
+
           <div className="weather-description">Cloudy</div>
 
           <div className="temperature-on-display">
@@ -42,18 +44,18 @@ export default function CurrentWeather() {
             <span>
               <span className="main-degree-no">-3</span>
               <span className="units">
-                <a href="o" className="celcius">
+                <a href="/" className="celcius">
                   °C
-                </a>{" "}
-                |
-                <a href="" className="fahrenheit">
+                </a>
+                <span> |</span>
+                <a href="/" className="fahrenheit">
                   °F
                 </a>
               </span>
             </span>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 information">
           <div className="city-name">London</div>
           <ul>
             <li>Humidity: 4%</li>

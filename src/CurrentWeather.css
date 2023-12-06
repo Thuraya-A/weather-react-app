@@ -1,0 +1,61 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.CurrentWeather {
+  border: 1px solid #dadde1;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 6px;
+  max-width: 700px;
+}
+.weather {
+  padding-left: 10px;
+}
+.date {
+  line-height: 15px;
+  font-size: 17px;
+  font-weight: 18px;
+  text-transform: capitalize;
+}
+.time {
+  font-size: 15px;
+  line-height: 15px;
+}
+.city-name {
+  font-weight: 38px;
+  font-size: 27px;
+  margin-bottom: 6px;
+  margin-right: 25px;
+  text-align: right;
+}
+li {
+  color: #6a6b6c;
+  font-size: 15px;
+  list-style: none;
+  text-align: right;
+  line-height: 18px;
+  margin-right: 25px;
+}
+@media (max-width: 768px) {
+  div.go {
+    width: 65px;
+  }
+  .date {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  div.current {
+    width: 90px;
+    padding: 0px;
+  }
+  .weather-description {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .information {
+    padding: 0px;
+  }
+}
