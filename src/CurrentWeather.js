@@ -72,11 +72,7 @@ export default function CurrentWeather(props) {
       </div>
     );
   } else {
-    return (
-      <div>
-        {form}
-        <div>loading..</div>
-      </div>
-    );
+    search();
+    return "Loading...";
   }
 }
