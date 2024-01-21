@@ -10,7 +10,6 @@ export default function CurrentWeather(props) {
   const [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    console.log(response);
     setWeatherInfo({
       temp: response.data.main.temp,
       humidity: response.data.main.humidity,

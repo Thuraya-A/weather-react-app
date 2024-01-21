@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <CurrentWeather defaultCity="London" />
+
       <footer>
         <a href="https://github.com/Thuraya-A/weather-react-app">
           open-source-code{" "}
