@@ -29,6 +29,12 @@ body {
   margin-right: 25px;
   text-align: right;
 }
+.temperature-on-display {
+  margin-top: 10px;
+}
+img {
+  width: 100px;
+}
 
 li {
   color: #6a6b6c;
