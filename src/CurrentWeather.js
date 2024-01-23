@@ -15,7 +15,7 @@ export default function CurrentWeather(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       cityName: response.data.name,
-      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       precipitation: "N/A",
       date: new Date(response.data.dt * 1000),
