@@ -2,7 +2,8 @@ import React from "react";
 import FormatedDate from "./FormatedDate";
 import "./WeatherData.css";
 import WeatherIcons from "./WeatherIcons";
-import Conversion from "./Conversion.js";
+
+impprt ConvertUnit from "./ConvertUnit";
 
 export default function WeatherData(props) {
   return (
@@ -17,16 +18,7 @@ export default function WeatherData(props) {
             </span>
 
             <span className="main-degree-no col-lg-9 col-md-6 col-sm-7">
-              {Math.round(props.info.temp)}
-              <span className="units">
-                <a href="/" className="celcius">
-                  °C
-                </a>
-                <span>|</span>
-                <a href="/" className="fahrenheit">
-                  °F
-                </a>
-              </span>
+              <ConvertUnit celcius={props.info.temp} />
             </span>
           </div>
         </div>
