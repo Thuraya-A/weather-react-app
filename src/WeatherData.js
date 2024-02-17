@@ -1,26 +1,23 @@
 import React from "react";
 import FormatedDate from "./FormatedDate";
-import "./CurrentWeather.css";
+import "./WeatherData.css";
 import WeatherIcons from "./WeatherIcons";
+import Conversion from "./Conversion.js";
 
 export default function WeatherData(props) {
   return (
     <div className="WeatherData">
       <div className="row ">
         <div className="col-6">
-          <div className="city-name-sm d-lg-none d-md-none d-sm-block">
-            {props.info.cityName}
-          </div>
-
           <FormatedDate date={props.info.date} />
           <div className="weather-description">{props.info.description}</div>
-          <div className="temperature-on-display">
-            <WeatherIcons code={props.info.icon} />
+          <div className="row">
+            <span className="weather-icon mt-2 col-lg-3 col-md-6 col-sm-5">
+              <WeatherIcons code={props.info.icon} />
+            </span>
 
-            <span>
-              <span className="main-degree-no">
-                {Math.round(props.info.temp)}
-              </span>
+            <span className="main-degree-no col-lg-9 col-md-6 col-sm-7">
+              {Math.round(props.info.temp)}
               <span className="units">
                 <a href="/" className="celcius">
                   °C
@@ -33,6 +30,7 @@ export default function WeatherData(props) {
             </span>
           </div>
         </div>
+
         <div className="col-6 information">
           <div className="city-name ">{props.info.cityName}</div>
           <ul>

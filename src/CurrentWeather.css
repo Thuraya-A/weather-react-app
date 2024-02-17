@@ -22,28 +22,7 @@ body {
   font-size: 15px;
   line-height: 15px;
 }
-.city-name {
-  font-weight: 38px;
-  font-size: 27px;
-  margin-bottom: 6px;
-  margin-right: 25px;
-  text-align: right;
-}
-.temperature-on-display {
-  margin-top: 10px;
-}
-img {
-  width: 100px;
-}
 
-li {
-  color: #6a6b6c;
-  font-size: 15px;
-  list-style: none;
-  text-align: right;
-  line-height: 18px;
-  margin-right: 25px;
-}
 @media (max-width: 767px) {
   div.go {
     width: 65px;
@@ -51,9 +30,7 @@ li {
   .date {
     display: none;
   }
-  img {
-    display: none;
-  }
+
   div.current {
     width: 90px;
     padding: 0px;
@@ -79,12 +56,10 @@ li {
     margin-left: 20px;
     margin-bottom: 5px;
   }
+
   .humidity,
   .wind,
   .precipitation {
     display: none;
-  }
-  path {
-    color: #0d6efd;
   }
 }

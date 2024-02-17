@@ -39,58 +39,58 @@ export default function WeatherIcon(props) {
   };
 
   if (codeMapping[props.code] === "WiDaySunny") {
-    return <WiDaySunny size={24} />;
+    return <WiDaySunny size={75} />;
   }
   if (codeMapping[props.code] === "WiNightClear") {
-    return <WiNightClear size={24} />;
+    return <WiNightClear size={75} />;
   }
   if (codeMapping[props.code] === "WiDayCloudy") {
-    return <WiDayCloudy size={24} />;
+    return <WiDayCloudy size={75} />;
   }
   if (codeMapping[props.code] === "WiDayCloudy") {
-    return <WiDayCloudy size={24} />;
+    return <WiDayCloudy size={75} />;
   }
   if (codeMapping[props.code] === "WiCloud") {
-    return <WiCloud size={24} />;
+    return <WiCloud size={75} />;
   }
   if (codeMapping[props.code] === "WiCloud") {
-    return <WiCloud size={24} />;
+    return <WiCloud size={75} />;
   }
   if (codeMapping[props.code] === "WiCloudy") {
-    return <WiCloudy size={24} />;
+    return <WiCloudy size={75} />;
   }
   if (codeMapping[props.code] === "WiCloudy") {
-    return <WiCloudy size={24} />;
+    return <WiCloudy size={75} />;
   }
   if (codeMapping[props.code] === "WiDayRainMix") {
-    return <WiDayRainMix size={24} />;
+    return <WiDayRainMix size={75} />;
   }
   if (codeMapping[props.code] === "WiNightAltRainMix") {
-    return <WiNightAltRainMix size={24} />;
+    return <WiNightAltRainMix size={75} />;
   }
   if (codeMapping[props.code] === "WiNightAltRainMix") {
-    return <WiNightAltRainMix size={24} />;
+    return <WiNightAltRainMix size={75} />;
   }
   if (codeMapping[props.code] === "WiNightAltRain") {
-    return <WiNightAltRain size={24} />;
+    return <WiNightAltRain size={75} />;
   }
   if (codeMapping[props.code] === "WiDayThunderstorm") {
-    return <WiDayThunderstorm size={24} />;
+    return <WiDayThunderstorm size={75} />;
   }
   if (codeMapping[props.code] === "WiNightAltThunderstorm") {
-    return <WiNightAltThunderstorm size={24} />;
+    return <WiNightAltThunderstorm size={75} />;
   }
   if (codeMapping[props.code] === "WiDaySnowWind") {
-    return <WiDaySnowWind size={24} />;
+    return <WiDaySnowWind size={75} />;
   }
   if (codeMapping[props.code] === "WiNightAltSnowWind") {
-    return <WiNightAltSnowWind size={24} />;
+    return <WiNightAltSnowWind size={75} />;
   }
   if (codeMapping[props.code] === "WiDayFog") {
-    return <WiDayFog size={24} />;
+    return <WiDayFog size={75} />;
   }
   if (codeMapping[props.code] === "WiNightFog") {
-    return <WiNightFog size={24} />;
+    return <WiNightFog size={75} />;
   }
 
   return <div></div>;
